@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GeleideFormulier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns="http://www.geonovum.nl/stri/2012/2.0" xsi:schemaLocation="http://www.geonovum.nl/stri/2012/2.0 http://schemas.geonovum.nl/stri/2012/2.0/STRI2012.xsd" OverheidsCode="0037" NaamOverheid="Stadskanaal" Datum="2015-04-07">
+  <Plan Id="NL.IMWE.0037.VoorbeeldWelstand-VA01">
+    <Eigenschappen>
+      <Naam>Voorbeeld Welstandsnota Stadskanaal</Naam>
+      <Type>welstandsnota</Type>
+      <Status>vastgesteld</Status>
+      <Datum>2014-02-26</Datum>
+      <VersieGML>IMWE2014</VersieGML>
+      <VersiePraktijkRichtlijn>PRWE2014</VersiePraktijkRichtlijn>
+    </Eigenschappen>
+    <Onderdelen BasisURL="http://ruimtelijkeplannen.stadskanaal.nl/plannen/NL.IMWE.0037.VoorbeeldWelstand-/NL.IMWE.0037.VoorbeeldWelstand-VA01/">
+      <GML>NL.IMWE.0037.VoorbeeldWelstand-VA01.gml</GML>
+      <PlanTeksten>pt_NL.IMWE.0037.VoorbeeldWelstand-VA01.xml</PlanTeksten> 
+      <VaststellingsBesluit>vb_NL.IMWE.0037.VoorbeeldWelstand-VA01.pdf</VaststellingsBesluit>
+      <GeleideFormulier>g_NL.IMWE.0037.VoorbeeldWelstand-VA01.xml</GeleideFormulier>
+    </Onderdelen>
+    <Supplementen />
+  </Plan>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedInfo>
+    <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+    <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+    <Reference URI="">
+      <Transforms>
+        <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+      </Transforms>
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <DigestValue>yHrst6qTZKzsFk5vxjlejGFwQDA=</DigestValue>
+    </Reference>
+    <Reference URI="NL.IMWE.0037.VoorbeeldWelstand-VA01.gml">
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <DigestValue>FYLOy46/JUHx8+fmMn9b+LGZnvk=</DigestValue>
+    </Reference>
+    <Reference URI="pt_NL.IMWE.0037.VoorbeeldWelstand-VA01.xml">
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <DigestValue>AGC8Q7vdQUdyAr3HhIIGoMtjd68=</DigestValue>
+    </Reference>
+    <Reference URI="vb_NL.IMWE.0037.VoorbeeldWelstand-VA01.pdf">
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <DigestValue>mL/A1tiVAPt6pTKxnM7wh4hsbRg=</DigestValue>
+    </Reference>
+  </SignedInfo>
+  <SignatureValue>OvR/GxMAuxME1r0jbjfzyZ5liK2ehpkHco+QN24rq70hbmpw1lPSW6JDGMlj9mv5utFwIsJob8iQeYTavNa6pbgRzwoJfIJY9RfeKxhO7SRMyYkWdJtDDn/c2NTdhb4jPpf4BCNpKboIoaKT3Qkn/VKAgbluiKNBRxGp+AxNpY5yn8BGFdYeI13pYEPuXMtMfOqdZ5jSxtZMBgPVi5/jU1sF3YPSggL5vk0q4Qmh+uN03PZM7Xcu/3nq/po4yJdiqBuQ/CDD/+rB6zhCbhmH6gEylbPj0dFGkv6KfOH+yhobZEw3oFZewgntz0G4SCc86mSzmDfx83mrrDIW1Xw2gg==
+  </SignatureValue>
+  <KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo>
+  </Signature>
+</GeleideFormulier>

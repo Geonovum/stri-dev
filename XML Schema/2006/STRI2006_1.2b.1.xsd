@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- =================================================================== -->
+<!--                                                     STRI2006                                                                   -->
+<!-- =================================================================== -->
+<!-- Geonovum, Beheerorganisatie RO-Standaarden. http://ro-standaarden.geonovum.nl -->
+<!-- =================================================================== -->
+<!-- Versie informatie: 2012-05-29 -->
+<!-- STRI2006 Manifest Schema v1.2b.1 -->
+<!-- Update 2012 voor plantypen die toegevoegd zijn aan IMROPCP2008 versie 1.2 -->
+<!-- Deze plantypen moeten gelijk zijn omdat de PR aangeeft dat de stri dezelfde plantypen gebruikt zoals die in het IMROPCP plan zijn toegepast -->
+<!-- Het STRI2006 XSD is niet gepubliceerd op een URL. Er is dus geen remote versie -->
+<!-- Versie informatie: 2009-01-14 -->
+<!-- STRI2006 Manifest Schema v1.2b -->
+<!-- Hoort bij STRI2006 versie 1.2b, 23 december 2008 -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.geonovum.nl/stri/2006/1" targetNamespace="http://www.geonovum.nl/stri/2006/1" elementFormDefault="qualified" version="1.2b.1">
+	<xs:simpleType name="Naam">
+		<xs:annotation>
+			<xs:documentation xml:lang="nl">waarde is gelijk aan IMRO:naam van het instrument</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="TypePlan">
+		<xs:annotation>
+			<xs:documentation xml:lang="nl">Waarde is gelijk aan IMRO:typePlan van het instrument</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Euregionaal plan"/>
+			<xs:enumeration value="Europees plan"/>
+			<xs:enumeration value="gemeentelijk plan"/>
+			<xs:enumeration value="gemeentelijk plan; artikel 19 plan"/>
+			<xs:enumeration value="gemeentelijk plan; bestemmingsplan artikel 10"/>
+			<xs:enumeration value="gemeentelijk plan; structuurplan"/>
+			<xs:enumeration value="gemeentelijk plan; structuurschets"/>
+			<xs:enumeration value="gemeentelijk plan; structuurvisie"/>
+			<xs:enumeration value="gemeentelijk plan; uitwerkingsplan artikel 11"/>
+			<xs:enumeration value="gemeentelijk plan; wijzigingsplan artikel 11"/>
+			<xs:enumeration value="gemeentelijk plan; voorbereidingsbesluit"/>
+			<xs:enumeration value="nationaal plan"/>
+			<xs:enumeration value="nationaal plan; nota"/>
+			<xs:enumeration value="nationaal plan; PKB"/>
+			<xs:enumeration value="nationaal plan; structuurschema/schets"/>
+			<xs:enumeration value="nationaal plan; uitwerking nationaal plan"/>
+			<xs:enumeration value="provinciaal plan"/>
+			<xs:enumeration value="provinciaal plan; omgevingsplan"/>
+			<xs:enumeration value="provinciaal plan; sectorplan"/>
+			<xs:enumeration value="provinciaal plan; streekplan"/>
+			<xs:enumeration value="provinciaal plan; uitwerking provinciaal plan"/>
+			<xs:enumeration value="regionaal plan"/>
+			<xs:enumeration value="regionaal plan; omgevingsplan"/>
+			<xs:enumeration value="regionaal plan; sectorplan"/>
+			<xs:enumeration value="regionaal plan; structuurplan/schets/visie"/>
+			<xs:enumeration value="regionaal plan; uitwerking regionaal plan"/>
+			<xs:enumeration value="gemeentelijk plan; overig"/>
+			<xs:enumeration value="provinciaal plan; overig"/>
+			<xs:enumeration value="rijksplan; overig"/>
+			<xs:enumeration value="gemeentelijke visie; overig"/>
+			<xs:enumeration value="provinciale visie; overig"/>
+			<xs:enumeration value="rijksvisie; overig"/>
+			<xs:enumeration value="gemeentelijk besluit; overig"/>
+			<xs:enumeration value="provinciaal besluit; overig"/>
+			<xs:enumeration value="rijksbesluit; overig"/>
+			<!-- deze lijst is uitgebreid met de IMROPCP2008 versie 1.2.1 -->
+			<!-- toevoeging voor 2012 (versie 1.2.1 update -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PlanStatus">
+		<xs:annotation>
+			<xs:documentation xml:lang="nl">Waarde is gelijk aan IMRO:planstatus van het instrument</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="awb bezwaar"/>
+			<xs:enumeration value="beroep afdeling bestuursrechtspraak"/>
+			<xs:enumeration value="concept"/>
+			<xs:enumeration value="goedgekeurd"/>
+			<xs:enumeration value="goedgekeurd; geheel goedgekeurd"/>
+			<xs:enumeration value="goedgekeurd; goedgekeurd met uitzondering van onthoudingen"/>
+			<xs:enumeration value="goedkeuring onthouden"/>
+			<xs:enumeration value="kabinetsstandpunt"/>
+			<xs:enumeration value="kabinetsvoornemen"/>
+			<xs:enumeration value="ontwerp"/>
+			<xs:enumeration value="resultaten van inspraak bestuurlijk overleg en advies"/>
+			<xs:enumeration value="uitspraak afdeling bestuursrechtspraak"/>
+			<xs:enumeration value="uitspraak afdeling bestuursrechtspraak; alsnog goedgekeurd"/>
+			<xs:enumeration value="uitspraak afdeling bestuursrechtspraak; alsnog goedkeuring onthouden"/>
+			<xs:enumeration value="vastgesteld"/>
+			<xs:enumeration value="vastgesteld beleid"/>
+			<xs:enumeration value="vigerend"/>
+			<xs:enumeration value="onherroepelijk"/>
+			<xs:enumeration value="voorlopige voorziening"/>
+			<xs:enumeration value="voorontwerp"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Datum">
+		<xs:annotation>
+			<xs:documentation xml:lang="nl">Waarde is gelijk aan IMRO:datum van het instrument</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:dateTime"/>
+	</xs:simpleType>
+	<xs:simpleType name="PlanOnderdeel">
+		<xs:annotation>
+			<xs:documentation xml:lang="nl">Definitie van een enkel onderdeel van het instrument</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:anyURI">
+			<xs:pattern value="([a-z]{1,2}_)?NL\.IMRO\.[0-9]{8}[A-Za-z0-9_\-\.]{1,15}-([A-Za-z0-9_\-\.]{1,62})?\.(html|htm|xhtml|xml|gml|pdf|png|jpg|jpeg|tif)"/>
+			<!-- hier is de specificatie van de bestandsnaam volgens de DURP Standaarden 2006 -->
+			<!-- voorbeeld: "v_NL.IMRO.1282000026B-_artikel12.htm" -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PlanSupplement">
+		<xs:annotation>
+			<xs:documentation xml:lang="nl">Definitie van een enkel supplement behorende bij het instrument</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:anyURI">
+			<xs:pattern value="(http(s?)://(.)*)|[^/]*"/>
+			<!-- hier is specificatie van de gehele absolute URL verseist, of als er een BasisURL is gegeven alleen een bestands- of scriptnaam -->
+			<!-- voorbeeld: "http://www.durpen.nl/ro/print.css" OF "print.css" als de BasisURL is ingevuld -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PlanBasisURL">
+		<xs:annotation>
+			<xs:documentation xml:lang="nl">Definitie van de BasisURL voor onderdelen en supplementen</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:anyURI">
+			<xs:pattern value="http(s?)://(.)*/"/>
+			<!-- hier is de specificatie van het gehele pad vereist -->
+			<!-- voorbeeld: "http://www.durpen.nl/ro/" -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:attributeGroup name="GlobaleAttributen">
+		<xs:annotation>
+			<xs:documentation xml:lang="nl">Attributen van een manifest of geleideformulier</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="OverheidsCode" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation xml:lang="nl">CBS Code van de bronhouder waarvan het instrument afkomstig is</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="NaamOverheid" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation xml:lang="nl">Naam van de overheid waarvan het instrument afkomstig is</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Datum" type="xs:dateTime" use="required"/>
+	</xs:attributeGroup>
+	<xs:element name="Manifest">
+		<xs:annotation>
+			<xs:documentation xml:lang="nl">Definitie van het MANIFEST voor IMRO2006 instrumenten</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Plan" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="GlobaleAttributen"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GeleideFormulier">
+		<xs:annotation>
+			<xs:documentation xml:lang="nl">Definitie van het GELEIDEFORMULIER voor IMRO2006 instrumenten</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Plan"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="GlobaleAttributen"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Plan">
+		<xs:annotation>
+			<xs:documentation xml:lang="nl">Definitie van een individueel IMRO2006 INSTRUMENT</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Eigenschappen">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="Naam" type="Naam"/>
+							<xs:element name="Type" type="TypePlan"/>
+							<xs:element name="Status" type="PlanStatus"/>
+							<xs:element name="Datum" type="Datum"/>
+							<xs:element name="VersieIMRO" type="xs:string"/>
+							<xs:element name="VersiePraktijkRichtlijn" type="xs:string"/>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Onderdelen">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IMRO" type="PlanOnderdeel"/>
+							<xs:element name="Voorschriften" type="PlanOnderdeel" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="VoorschriftenBijlage" type="PlanOnderdeel" minOccurs="0"/>
+							<xs:element name="Toelichting" type="PlanOnderdeel" minOccurs="0"/>
+							<xs:element name="ToelichtingBijlage" type="PlanOnderdeel" minOccurs="0"/>
+							<xs:element name="BesluitDocument" type="PlanOnderdeel" minOccurs="0"/>
+							<xs:element name="BeleidsDocument" type="PlanOnderdeel" minOccurs="0"/>
+							<xs:element name="BeleidsDocumentBijlage" type="PlanOnderdeel" minOccurs="0"/>
+							<xs:element name="BeleidsTekst" type="PlanOnderdeel" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="PlanKaart" type="PlanOnderdeel" minOccurs="0"/>
+							<xs:element name="GeleideFormulier" type="PlanOnderdeel" minOccurs="0"/>
+						</xs:sequence>
+						<xs:attribute name="BasisURL" type="PlanBasisURL" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Supplementen" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="StartPagina" type="PlanSupplement" minOccurs="0"/>
+							<xs:element name="CSS" type="PlanSupplement" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="SLD" type="PlanSupplement" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="WMS" type="PlanSupplement" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+						<xs:attribute name="BasisURL" type="PlanBasisURL" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+			<xs:attribute name="Id" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation xml:lang="nl">waarde is gelijk aan IMRO:identificatie van het instrument</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="Historisch" type="xs:boolean"/>
+			<xs:attribute name="Contour" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation xml:lang="nl">geeft aan of van dit instrument alleen de contouren zijn gecodeerd</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

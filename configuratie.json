@@ -1,0 +1,7 @@
+{
+	"title": "Standaard Toegankelijkheid Ruimtelijke Instrumenten",
+	"description": "",
+	"sub_standards": {
+		"regels": "<a href=\"http://www.schematron.com/\">Schematron</a> schema's, waarin validatieregels aanvullend op GML of XML schema's zijn opgenomen."
+	}
+}	
