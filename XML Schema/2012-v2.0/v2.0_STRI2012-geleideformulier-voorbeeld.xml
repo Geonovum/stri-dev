@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GeleideFormulier xmlns="http://www.geonovum.nl/stri/2012/2.0"
+	xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OverheidsCode="0000"
+	NaamOverheid="Rijksoverheid" Datum="2015-04-07"
+  xsi:schemaLocation="http://www.geonovum.nl/stri/2012/2.0 http://schemas.geonovum.nl/stri/2012/2.0/STRI2012.xsd">
+	<Plan Id="NL.IMRO.0000.AD16081970-V037">
+		<Eigenschappen>
+			<Naam>Voorbeeld</Naam>
+			<Type>bestemmingsplan</Type>
+			<Status>vastgesteld</Status>
+			<Datum>2012-07-01</Datum>
+			<VersieGML>IMRO2012</VersieGML>
+			<VersiePraktijkRichtlijn>PRGB2012</VersiePraktijkRichtlijn>
+		</Eigenschappen>
+		<Onderdelen BasisURL="http://www.rijksplannen.nl/NL.IMRO.0000.AD16081970/V037/">
+			<GML>NL.IMRO.0000.AD16081970-V037.gml</GML>
+			<PlanTeksten>pt_NL.IMRO.0000.AD16081970-V037.xml</PlanTeksten>
+			<VaststellingsBesluit>vb_NL.IMRO.0000.AD16081970-V037.pdf</VaststellingsBesluit>
+			<Illustratie>i_NL.IMRO.0000.AD16081970-V037_plankaart.pdf</Illustratie>
+			<GeleideFormulier>g_NL.IMRO.0000.AD16081970-V037.xml</GeleideFormulier>
+		</Onderdelen>
+	</Plan>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference URI="">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>sVNBtRdmUkADRcnwpNjtBSbdZq4=</DigestValue>
+			</Reference>
+			<Reference URI="NL.IMRO.0000.AD16081970-V037.gml">
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>n6B5ak9cAzTQAMxJ0OF4JWS6qeM=</DigestValue>
+			</Reference>
+			<Reference URI="pt_NL.IMRO.0000.AD16081970-V037-3000.xml">
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>Xh01mYufOSeBrIT4C0ZTrWEIoQU=</DigestValue>
+			</Reference>
+			<Reference URI="vb_NL.IMRO.0000.AD16081970-V037-3000.pdf">
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>DJvfRLcWSvqQlxazGcadugCEaTw=</DigestValue>
+			</Reference>
+			<Reference URI="i_NL.IMRO.0000.AD16081970-V037-3000_plankaart.pdf">
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>CfTpnfjTc5Bd1hdpwvnwtIUCrCg=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>Fo9d4q45EswnzvumWHeE3db/tllMdM9v6euuhoVWdMw1R19kSv9TVsFC5QTwuZ3ldreybBimFp3CRx0MEQDcexe8H9bICmfQ2lOlORghcklp9gcAINd/ELojzXIUeIcSsxiRMizeHCTbgkvr3PpHN7lhnEKDIZLF8P/gPmEMxwg=</SignatureValue>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>MIIFHjCCBAagAwIBAgIRAOQZJAWM321fDTDmYY8TBKswDQYJKoZIhvcNAQEFBQAwXzELMAkGA1UEBhMCTkwxFzAVBgNVBAoTDkRpZ2lOb3RhciBCLlYuMTcwNQYDVQQDEy5EaWdpTm90YXIgUEtJb3ZlcmhlaWQgQ0EgT3ZlcmhlaWQgZW4gQmVkcmlqdmVuMB4XDTA5MDQxNzA3NTgxNVoXDTEyMDQxNzA3NTgxNVowgagxCzAJBgNVBAYTAk5MMSkwJwYDVQQKEyBNaW5pc3RlcmllIHZhbiBWUk9NICgyMDAwMDAwNTYwKTEdMBsGA1UECxMUUnVpbXRlbGlqa2UgT3JkZW5pbmcxGjAYBgNVBAUTEVBLMDcwMDAxMDAxMzcwMTQyMTMwMQYDVQQDEypNaW5pc3RlcmllIHZhbiBWUk9NIC0gUnVpbXRlbGlqa2UgT3JkZW5pbmcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJ94DQmygtj+gYw1NM5jLXhTDDMUpiSdwGOwvs99Sa0hCoYU38xDYMfbyI5Dg7Gg5V2r9JyHOHOWJTp3yBVXNgWyWpuK9WziemQyar4XY6NsVPdZAVkDOp9GuSNZtuusGrOYVUsVaqMZkbl3kjW025mOb5lzR48ZufMxvpaLOTGVAgMBAAGjggINMIICCTA6BggrBgEFBQcBAQQuMCwwKgYIKwYBBQUHMAGGHmh0dHA6Ly92YWxpZGF0aW9uLmRpZ2lub3Rhci5ubDAfBgNVHSMEGDAWgBRMCMmNdvGYxz7fPNcvdQ2xdnmXzDAJBgNVHRMEAjAAMIHSBgNVHSAEgcowgccwgcQGCmCEEAGHawECAgYwgbUwMwYIKwYBBQUHAgEWJ2h0dHA6Ly93d3cuZGlnaW5vdGFyLm5sL2Nwcy9wa2lvdmVyaGVpZDB+BggrBgEFBQcCAjByGnBDb25kaXRpb25zLCBhcyBtZW50aW9uZWQgb24gb3VyIHdlYnNpdGUgKHd3dy5kaWdpbm90YXIubmwvY3BzKSwgYXJlIGFwcGxpY2FibGUgdG8gYWxsIG91ciBwcm9kdWN0cyBhbmQgc2VydmljZXMuMFUGA1UdHwROMEwwSqBIoEaGRGh0dHA6Ly9zZXJ2aWNlLmRpZ2lub3Rhci5ubC9jcmwvcGtpb3ZlcmhlaWRlbmJlZHJpanZlbi9sYXRlc3RDUkwuY3JsMA4GA1UdDwEB/wQEAwIDuDBEBgNVHREEPTA7oDkGCisGAQQBgjcUAgOgKwwpMi4xNi41MjguMS4xMDAzLjEuMy4yLjMuUEswNzAwMDEwMDEzNzAxNDIwHQYDVR0OBBYEFHldr6576M2Z3Nb80i0FZ4/bgPrdMA0GCSqGSIb3DQEBBQUAA4IBAQDEgHBPLtL0My/JPIj0HX2TAlCAxWNFqL/21aJZATLvbg1uS/wzapajsy8NnJRXcGyFklOFiRMV0cuz6B/EbC4bfV3yYsMkOoi1+PmfdrXoP3hSFA7zz0oiovnAq5fT5yoVOCksT/s2mPhtTDj+6/qqsN1QjvMUZRCffgVnYHsSdIIYxNgq/clAdud+wBTasQfpwmF7oGdshTkwwrs0IfNdr52Krfpmg5qlGAjRs45k5oy+3AwIprvHueV6BrzpC93rsiNVXXPQgmOiiSCUgg4kOx/txQ0ZutnZxsr1iJn1Lp4W0eiV03MNygG5Qji60IBvvJoaE2mHIPJREAR1TWB0</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+	</Signature>
+</GeleideFormulier>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest xmlns="http://www.geonovum.nl/stri/2012/2.0" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+	OverheidsCode="0000" NaamOverheid="Rijksoverheid" Datum="2015-04-07"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.geonovum.nl/stri/2012/2.0 http://schemas.geonovum.nl/stri/2012/2.0/STRI2012.xsd">
+	<Dossier Id="NL.IMRO.0000.AD16081970" Status="vastgesteld">
+		<Plan Id="NL.IMRO.0000.AD16081970-V037">
+			<Naam>Voorbeeld</Naam>
+			<Datum>2012-07-01</Datum>
+			<GeleideFormulier>http://www.rijksplannen.nl/NL.IMRO.0000.AD16081970/V037/g_NL.IMRO.0000.AD16081970-V037.xml</GeleideFormulier>
+		</Plan>
+	</Dossier>
+	<Dossier Id="NL.IMWE.0037.VoorbeeldWelstand" Status="geheel onherroepelijk in werking">
+		<Plan Id="NL.IMWE.0037.VoorbeeldWelstand-VA01">
+			<Naam>Voorbeeld Welstandsnota Stadskanaal</Naam>
+			<Datum>2015-02-26</Datum>
+			<GeleideFormulier>http://ruimtelijkeplannen.stadskanaal.nl/plannen/NL.IMWE.0037.VoorbeeldWelstand-/NL.IMWE.0037.VoorbeeldWelstand-VA01/g_NL.IMWE.0037.VoorbeeldWelstand-VA01.xml</GeleideFormulier>
+		</Plan>
+	</Dossier>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference URI="">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>pfm5wFvyvu8ecrFYWZddGHFyDSM=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>
+			VwprtpDutInv4RWMbQPSG1b/BRZ9NexvvkDNF9KAZqdPVixfE3NYpi03wAceVPdwwtwx1DLBR5zUq4/+EH4mqX/mpajmVQMMPMCGeQnhGbS9lN1pFhpm1mBYYQglK4nkkjZln0ukJ8zwz0ya8VURLOiLXcVC9UcY/Vxk1pIOsZc=</SignatureValue>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>
+					MIIFHjCCBAagAwIBAgIRAOQZJAWM321fDTDmYY8TBKswDQYJKoZIhvcNAQEFBQAwXzELMAkGA1UEBhMCTkwxFzAVBgNVBAoTDkRpZ2lOb3RhciBCLlYuMTcwNQYDVQQDEy5EaWdpTm90YXIgUEtJb3ZlcmhlaWQgQ0EgT3ZlcmhlaWQgZW4gQmVkcmlqdmVuMB4XDTA5MDQxNzA3NTgxNVoXDTEyMDQxNzA3NTgxNVowgagxCzAJBgNVBAYTAk5MMSkwJwYDVQQKEyBNaW5pc3RlcmllIHZhbiBWUk9NICgyMDAwMDAwNTYwKTEdMBsGA1UECxMUUnVpbXRlbGlqa2UgT3JkZW5pbmcxGjAYBgNVBAUTEVBLMDcwMDAxMDAxMzcwMTQyMTMwMQYDVQQDEypNaW5pc3RlcmllIHZhbiBWUk9NIC0gUnVpbXRlbGlqa2UgT3JkZW5pbmcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJ94DQmygtj+gYw1NM5jLXhTDDMUpiSdwGOwvs99Sa0hCoYU38xDYMfbyI5Dg7Gg5V2r9JyHOHOWJTp3yBVXNgWyWpuK9WziemQyar4XY6NsVPdZAVkDOp9GuSNZtuusGrOYVUsVaqMZkbl3kjW025mOb5lzR48ZufMxvpaLOTGVAgMBAAGjggINMIICCTA6BggrBgEFBQcBAQQuMCwwKgYIKwYBBQUHMAGGHmh0dHA6Ly92YWxpZGF0aW9uLmRpZ2lub3Rhci5ubDAfBgNVHSMEGDAWgBRMCMmNdvGYxz7fPNcvdQ2xdnmXzDAJBgNVHRMEAjAAMIHSBgNVHSAEgcowgccwgcQGCmCEEAGHawECAgYwgbUwMwYIKwYBBQUHAgEWJ2h0dHA6Ly93d3cuZGlnaW5vdGFyLm5sL2Nwcy9wa2lvdmVyaGVpZDB+BggrBgEFBQcCAjByGnBDb25kaXRpb25zLCBhcyBtZW50aW9uZWQgb24gb3VyIHdlYnNpdGUgKHd3dy5kaWdpbm90YXIubmwvY3BzKSwgYXJlIGFwcGxpY2FibGUgdG8gYWxsIG91ciBwcm9kdWN0cyBhbmQgc2VydmljZXMuMFUGA1UdHwROMEwwSqBIoEaGRGh0dHA6Ly9zZXJ2aWNlLmRpZ2lub3Rhci5ubC9jcmwvcGtpb3ZlcmhlaWRlbmJlZHJpanZlbi9sYXRlc3RDUkwuY3JsMA4GA1UdDwEB/wQEAwIDuDBEBgNVHREEPTA7oDkGCisGAQQBgjcUAgOgKwwpMi4xNi41MjguMS4xMDAzLjEuMy4yLjMuUEswNzAwMDEwMDEzNzAxNDIwHQYDVR0OBBYEFHldr6576M2Z3Nb80i0FZ4/bgPrdMA0GCSqGSIb3DQEBBQUAA4IBAQDEgHBPLtL0My/JPIj0HX2TAlCAxWNFqL/21aJZATLvbg1uS/wzapajsy8NnJRXcGyFklOFiRMV0cuz6B/EbC4bfV3yYsMkOoi1+PmfdrXoP3hSFA7zz0oiovnAq5fT5yoVOCksT/s2mPhtTDj+6/qqsN1QjvMUZRCffgVnYHsSdIIYxNgq/clAdud+wBTasQfpwmF7oGdshTkwwrs0IfNdr52Krfpmg5qlGAjRs45k5oy+3AwIprvHueV6BrzpC93rsiNVXXPQgmOiiSCUgg4kOx/txQ0ZutnZxsr1iJn1Lp4W0eiV03MNygG5Qji60IBvvJoaE2mHIPJREAR1TWB0</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+	</Signature>
+</Manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Manifest xmlns="http://www.geonovum.nl/stri/2008/1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+OverheidsCode="1234" NaamOverheid="Durperdam" Datum="2010-11-08T12:23:43.843+01:00">
+	<Plan Historisch="false" Id="NL.IMRO.1234.BP0013-0001">
+		<Eigenschappen>
+			<Naam>Bestemmingsplan Rengerswetering</Naam>
+			<Type>bestemmingsplan</Type>
+			<Status>ontwerp</Status>
+			<Datum>2008-07-01T00:00:00.000+02:00</Datum>
+			<VersieIMRO>2008</VersieIMRO>
+			<VersiePraktijkRichtlijn>2008</VersiePraktijkRichtlijn>
+		</Eigenschappen>
+		<Onderdelen BasisURL="http://www.durperdam.nl/ro/BP0013/">
+			<IMRO>NL.IMRO.1234.BP0013-0001.gml</IMRO>
+			<Regels>r_NL.IMRO.1234.BP0013-0001.htm</Regels>
+			<Toelichting>t_NL.IMRO.1234.BP0013-0001.pdf</Toelichting>
+			<VaststellingsBesluit>vb_NL.IMRO.1234.BP0013-0001.pdf</VaststellingsBesluit>
+			<GeleideFormulier>g_NL.IMRO.1234.BP0013-0001.xml</GeleideFormulier>			
+		</Onderdelen>
+	</Plan>
+	<Plan Historisch="false" Id="NL.IMRO.1234.SV0014-0001">
+		<Eigenschappen>
+			<Naam>Structuurvisie Ongerweges</Naam>
+			<Type>structuurvisie</Type>
+			<Status>vastgesteld</Status>
+			<Datum>2008-07-01T00:00:00.000+02:00</Datum>
+			<VersieIMRO>2008</VersieIMRO>
+			<VersiePraktijkRichtlijn>2008</VersiePraktijkRichtlijn>
+		</Eigenschappen>
+		<Onderdelen BasisURL="http://www.durperdam.nl/ro/SV0014/">
+			<IMRO>NL.IMRO.1234.SV0014-0001.gml</IMRO>
+			<Illustratie>i_NL.IMRO.1234.SV0014-0001.jpg</Illustratie>
+			<VaststellingsBesluit>vb_NL.IMRO.1234.SV0014-0001.pdf</VaststellingsBesluit>
+			<BeleidsDocument>d_NL.IMRO.1234.SV0014-0001.pdf</BeleidsDocument>
+			<GeleideFormulier>g_NL.IMRO.1234.SV0014-0001.xml</GeleideFormulier>
+		</Onderdelen>
+	</Plan>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference URI="">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>E8Nb6h7BIzSXqn0Sxq8t9RZ5USU=</DigestValue>
+			</Reference>
+		</SignedInfo>
+	<SignatureValue>
+W88qVweCIXoLyEABbI1/iMzzFWWnDWfgqfGJkpBqT9TxYc5GHySHPjqmtdOm0L8G9DBJ3ifeHz/0
+b9aob9Flq1TDL+VRvo1jItn3+9SolsqXRH3+8WCsWbE5EYZIB9r6GYb7fV+hm+RrtF+OF9e7S8/i
+5LCwa8pCxPH0Jl9p9fbE+XtwHeSg1yg6Ni/r1T1ZO3YFcMRGMoDwotDQLqMBOW63URrcKw/bI2BR
+OSMTnNVqX6N7xfxwY2HMzy8DeUtmYX4FOjsZUN4V/UUkZDGqU+B9FyuvDxqCv+F33YruEO2sAe8f
+UwfgHqubtsFfmR2Zwzro1ZyCv01mdjiVMBERnoaplbZ0iKjS3lYaUnqfx9jqM/CE90/PWKg1tw3F
+mg3c38aaVkI8pLT41C53L/3at8yCGUBzisB2ci81JM3k6MRYT5wrtTRmbfB6kLpZIt3EetW8TpsC
+hAYRX/arkOkojhWzLk2LJzeiwM8eYl3gYMdX00SQTnY2EkWBdij3Th3bHS0bV4t7k7AkKFOlEePK
+vMda7PH/5kKifqKEOp6mHOKjRK68cM2mkipR5W6PBhjHQKMAcF+6ZMBRK4d54lsUawEd77u3ivU=</SignatureValue>
+		<KeyInfo>
+			<X509Data>
+	<X509Certificate>
+MIIFDDCCAvQCAQEwDQYJKoZIhvcNAQEFBQAwQjELMAkGA1UEBhMCTkwxCzAJBgNVBAgTAk5MMRIw
+EAYDVQQKEwlEZW1vIERVUlAxEjAQBgNVBAMTCURlbW8gRFVSUDAeFw0wNzEwMTgwODA0MTRaFw0w
+ODEwMTcwODA0MTRaMFYxCzAJBgNVBAYTAk5MMQswCQYDVQQIEwJOTDESMBAGA1UEBxMJRHVycGVy
+ZGFtMRIwEAYDVQQKEwlEdXJwZXJkYW0xEjAQBgNVBAMTCUR1cnBlcmRhbTCCAiIwDQYJKoZIhvcN
+AQEBBQADggIPADCCAgoCggIBANx4RzNYmwX6kOvWTe/RlEFdHfr/Cc11HJ+2ncjYTcPpdc1D9HVY
+p/vihoayPRtEuyFObWAJrDTU5BR9rK65cNcdKgrjDosc3vz+rrQTuvjNdMSWChol7vaA/C4YGyL7
+OnQTbYzo8zzyaS+hJobOBFNxi6fOkgTaWHOw5tAic1+qeklER3FoMK8MEAAm7pRRQZ35Xh+eS2fb
+rNejEf/hKchYVL6AupWD6opbWVXzRqkAf1l9t7LhFD/qP9pjR6Vkoln51ew0isTRHsI98tvyMcaO
+9MY12TuhjrlJS0KgPJTrvtYsrbAHuZZqOe52j8WAsHRl8G6CgN/RfOV/RWkg1lHQ9ktmvemNjmYy
+co52uZXn6AftlZ8zrTR4q71gtRS/VSfwR6WqkJlK1e0zWMbCahcEvX+OUJmv7L/dDe2LvU0OziHM
+3Qw4bM5AN4LH3KfFmclpFlb9WGrJe9cfCJOJJrzYih9dmGBCh7oAJUC4wH8F0CeZ2bcUoyWJL2ke
+25Xfwn2tgpc2JFJAoUEoWjnaTt7CgQs5590yPtX8CK3+FxZsqV6UFGlBxDl+JIdL3ocXkq5hKWHG
+UsE319MhLe9ksC/7vYHVE2zXM9Am4cjzd2UlXNywfihegqFqc7f3+vLVc3L3kmKKZni9Q2HqMqKa
+Rw7Q3C96b4/ZogHOLWnNBCMZAgMBAAEwDQYJKoZIhvcNAQEFBQADggIBACnNo2Y6clnP547yQEgF
+6e3yjl0UMb7clQcNtwpM7atTShgUVVhFS2E8xL0MH6Pzsq/TjBk2L7cNS8kM21vbs9b5m2gRAava
+OQWq52kwA2Ele0gKdDmDBnqgXf+lvuXmvsOsWdvwUPmhKGhErVf9LMombIxn0/6F3r3fo3O+BvhT
+XCg4GMtKyU2H/TPbx5s5T7Ne+57YYzkX1f2aoAjCmyqIoO1FpoyXhkL9/vYsYERlbDSD0UoJLbq/
+HjR60pOo4xcgXoF/h7dNfzsBcHtU6ho0rS6/aU6SLE12Xqb4u6ZWFSIvgY4vXgzdTDLYCZjo5Z3A
+wVae3TU2Y4mzv1+ozGit8wNWmq/eLjFjZB6Ol2POov3VgcU4AKibfZn+RzCJitYdRKFoqHfbPTNu
+v8U5RaxzFcWZA6WXu0ku/QOsmuMna57hO4YCtXW3IAozsjbI1pMtnuRoPNeuLOsPD7cIKvFHDyye
+aD0+sKUQnscPza4xaWcL6nuLKBVCTXInlFNI8S5P0LL83BvRTPnXIz3h6wd5B7EsWsyMLVI4nFgq
+dxxT2wkWglLh/knhf9opyJIqYfqvhsOUJg7scp2N5AZzrW2qPQXFDO4504Vu43GYxLWArERW+Om7
+AJjVk0YR4i9da+//CDnKGUmDKW37OFsP8GdHD2SwMZXdmULsLvzuoBYq</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+	</Signature>
+</Manifest>
